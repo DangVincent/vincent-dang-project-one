@@ -64,6 +64,7 @@ button {
     width: 85%;
     overflow: hidden;
 }
+
 /* global styles ends here */
 /* header content styles starts here */
 header {
@@ -167,7 +168,8 @@ header {
 }
 .new-product-description p {
     font-size: 1.6rem;
-    margin: 5px 0 0;
+    margin: 5px 0;
+    text-align: left;
 }
 .new-product-description button {
     background: #0178A5;
@@ -368,16 +370,34 @@ header {
 }
 /* footer content styles ends here */
 /* media queries starts here */
-@media (min-width: 1921px) and (max-width: 3840px) {
+@media (min-width: 2733px) and (max-width: 4800px) {
     .featured-content-one,
     .featured-content-two {
-        width: 14%;
+        width: 12%;
     }
 }
-@media (min-width: 1400px) and (max-width: 1920px) {
+@media (min-width: 2051px) and (max-width: 2732px) {
     .featured-content-one,
     .featured-content-two {
-        width: 28%;
+        width: 20%;
+    }
+}
+@media (min-width: 1709px) and (max-width: 2050px) {
+    .featured-content-one,
+    .featured-content-two {
+        width: 26.5%;
+    }
+}
+@media (min-width: 1527px) and (max-width: 1708px) {
+    .featured-content-one,
+    .featured-content-two {
+        width: 32%;
+    }
+}
+@media (min-width: 1367px) and (max-width: 1526px) {
+    .featured-content-one,
+    .featured-content-two {
+        width: 36%;
     }
 }
 @media (max-width: 1292px) {
@@ -463,6 +483,7 @@ header {
         font-size: 6rem;
         width: 100%;
         clear: both;
+        padding: 40px 0;
     }
     .service-info-content .service-info:nth-of-type(2) {
         margin: 0;
