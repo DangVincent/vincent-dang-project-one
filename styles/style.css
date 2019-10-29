@@ -71,6 +71,7 @@ header {
     background-image: url(../assets/header-image.jpg);
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     min-height: 100px;
     padding: 1px;
@@ -468,7 +469,9 @@ header {
         clear: both;
         width: 100%;
     }
-    
+    .new-product-image {
+        height: 400px;
+    }
     .new-product-description {
         text-align: center;
         margin: 0;
@@ -490,6 +493,9 @@ header {
     }
 }
 @media (max-width: 1108px) {
+    .new-product-image {
+        height: 320px;
+    }
     .featured-content h2 {
         font-size: 6.5rem;
     }
@@ -501,6 +507,9 @@ header {
     }
 }
 @media (max-width: 849px) {
+    .new-product-image {
+        height: 280px;
+    }
     .featured-content p {
         font-size: 1.6rem;
     }
@@ -588,6 +597,9 @@ header {
 @media  (max-width: 425px) {
     .new-product-content h2 {
         font-size: 5rem;
+    }
+    .new-product-image {
+        height: 250px;
     }
     .featured-content-image-one,
     .featured-content-image-two {
