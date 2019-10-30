@@ -34,7 +34,8 @@ a {
       text-decoration: none;
 }
 nav, 
-p {
+p,
+legend {
     font-family: 'Roboto', sans-serif;
     font-size: 2rem;
     line-height: 29px;
@@ -286,10 +287,14 @@ header {
     clear: both;
     padding: 80px 0;
 }
+.footer-content .wrapper {
+    border: 1px solid tomato;
+}
 .footer-links-content,
 .stay-updated-content,
 .contact-content {
     float: left;
+    border: 1px solid tomato;
 }
 .footer-links-content {
     width: 20%;
@@ -317,17 +322,29 @@ header {
 }
 .stay-updated-content h3{
     font-size: 5rem;
-    margin-top: 20px;
+    margin-top: 18px;
 }
-.stay-updated-content p {
-    margin: 15px 0 10px;
+.stay-updated-content fieldset {
+    border: none;
+    margin: 0;
+}
+.stay-updated-content fieldset legend {
+    margin: 15px auto 10px;
 }
 .stay-updated-content .email-address {
-    padding: 14px 0 13px 30px;
+    padding: 13px 0 12px 30px;
     width: 75%;
     font-size: 2rem;
     border: none;
+    border-bottom: 1px solid transparent;
 }
+.stay-updated-content .email-address:hover {
+    color: #7e7e7e;
+    border: 1px solid #7e7e7e;
+}
+.stay-updated-content .email-address:focus {
+    color: #000000;
+} 
 .stay-updated-content .subscribe {
     font-family: 'East Sea Dokdo', cursive;
     background: #0178A5;
@@ -364,10 +381,6 @@ header {
 .copyright-content p {
     color: #ffffff;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 2rem;
-    line-height: 29px;
-    letter-spacing: 0.2px;
 }
 /* footer content styles ends here */
 /* media queries starts here */
@@ -438,12 +451,12 @@ header {
     .stay-updated-content h3 {
         margin: 0;
     }
-    .stay-updated-content .email-address{
+    .stay-updated-content .email-address {
         width: 100%;
         text-align: center;
         margin-bottom: 10px;
         padding: 14px 0 13px 0;        
-    }  
+    } 
     .contact-content  h4 {
         margin-top: 20px;
         font-size: 5rem;
